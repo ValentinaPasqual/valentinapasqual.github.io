@@ -1,0 +1,229 @@
+[
+	{
+		"id": "http://zotero.org/users/local/OuVNkjN5/items/EM2YHVJ6",
+		"type": "article-journal",
+		"abstract": "Scholarly analysis of archival, library, and literary sources results in a variety of digital artefacts meant to foster knowledge discovery and new research enquiries. Guidelines and standards to formally represent disciplinary information are available (e.g. XML schemas, ontologies, vocabularies). However, digital artefacts rarely address reusable structured information on the hermeneutical approach adopted by scholars when validating hypotheses. As a consequence, reproducibility and assessment of research results is hampered, and comparing online contradictory information is still a hard task. In this work we show how to leverage Semantic Web technologies in a high-level, portable data model for representing hermeneutical aspects related to cross-disciplinary analysis of archival and literary sources. We showcase three representative scenarios in the Cultural Heritage domain where the model is applied, and we describe benefits and limits of our solution.",
+		"container_title": "JLIS.it",
+		"DOI": "10.4403/jlis.it-12642",
+		"ISSN": "2038-1026",
+		"issue": "3",
+		"language": "en",
+		"note": "number: 3",
+		"page": "59-76",
+		"source": "www.jlis.it",
+		"title": "Knowledge Representation of digital Hermeneutics of archival and literary Sources",
+		"URL": "https://www.jlis.it/article/view/12642",
+		"volume": "11",
+		"author": [
+			{
+				"family": "Daquino",
+				"given": "Marilena"
+			},
+			{
+				"family": "Pasqual",
+				"given": "Valentina"
+			},
+			{
+				"family": "Tomasi",
+				"given": "Francesca"
+			}
+		],
+		"accessed": {
+			"date_parts": [
+				[
+					"2021",
+					10,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date_parts": [
+				[
+					"2020",
+					9,
+					15
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/OuVNkjN5/items/T7RA98ZB",
+		"type": "article-journal",
+		"abstract": "The paper focuses on a case of interdisciplinary digital edition, developed in collaborative mode, whose ecdotic and interpretative innovations are analyzed. The edition – produced as part of the VaSto project – is dedicated to Benedetto Varchi’s Storia fiorentina, which traces the events that took place in Florence between 1527 and 1538, commissioned by the Duke of Florence Cosimo I de’ Medici in 1546, left unfinished and published only in 1721 in a version censored by Cosimo’s circle. Due to the wealth of data on Florentine life at the time, it is considered a valuable source for scholars, historians and art historians, but the original version is still unpublished.",
+		"container_title": "magazén",
+		"DOI": "10.30687/mag/2724-3923/2021/03/006",
+		"ISSN": "2724-3923",
+		"issue": "1",
+		"journalAbbreviation": "mag",
+		"language": "en",
+		"page": "JournalArticle_5057",
+		"source": "DOI.org (Crossref)",
+		"title": "<i>VaSto</i> : un’edizione digitale interdisciplinare",
+		"title-short": "<i>VaSto</i>",
+		"URL": "https://edizionicafoscari.unive.it/it/edizioni/riviste/magazen/2021/1/vasto-unedizione-digitale-interdisciplinare/",
+		"author": [
+			{
+				"family": "Brancato",
+				"given": "Dario"
+			},
+			{
+				"family": "Corbellini",
+				"given": "Milena"
+			},
+			{
+				"family": "Italia",
+				"given": "Paola"
+			},
+			{
+				"family": "Pasqual",
+				"given": "Valentina"
+			},
+			{
+				"family": "Priore",
+				"given": "Roberta"
+			}
+		],
+		"accessed": {
+			"date_parts": [
+				[
+					"2021",
+					10,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date_parts": [
+				[
+					"2021",
+					6,
+					30
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/OuVNkjN5/items/TQENWD8B",
+		"type": "paper-conference",
+		"abstract": "Crowd-sourced Knowledge Graphs (KGs) may be biased: some biases can originate from factual errors, while others reflect different points of view. How to identify and measure biases in crowd-sourced KGs? And then, how to tell apart factual errors from different point of views? And how to put together all these steps contextualized in a human-in-the-loop framework?",
+		"event": "ISWS International Semantic Web Research Summer School 2019",
+		"event-place": "Bertinoro, Italy",
+		"language": "en",
+		"page": "101-108",
+		"publisher-place": "Bertinoro, Italy",
+		"source": "oro.open.ac.uk",
+		"title": "A human-in-the-loop framework to handle implicit bias in crowdsourced KGs",
+		"URL": "https://arxiv.org/pdf/2012.11936.pdf",
+		"author": [
+			{
+				"family": "Morales Tirado",
+				"given": "Alba"
+			},
+			{
+				"family": "Oelen",
+				"given": "Allard"
+			},
+			{
+				"family": "Pasqual",
+				"given": "Valentina"
+			},
+			{
+				"family": "Shi",
+				"given": "Meilin"
+			},
+			{
+				"family": "Umbrico",
+				"given": "Alessandro"
+			},
+			{
+				"family": "Xu",
+				"given": "Weiqin"
+			},
+			{
+				"family": "Celino",
+				"given": "Irene"
+			}
+		],
+		"accessed": {
+			"date_parts": [
+				[
+					"2021",
+					10,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date_parts": [
+				[
+					"2020",
+					12,
+					23
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/OuVNkjN5/items/MZYUMPNA",
+		"type": "article-journal",
+		"abstract": "This research aims to explore and advance scholars’ understanding of the coexistence of multiple interpretations in a formal framework, by providing a practical solution to represent them. The state of the art, the adopted methodology and approach, and the results applied on a significant case study are shown. The research has been narrowed by working on a use case – the collection of lectures called Scrivere, rappresentare, conoscere nel rinascimento. Pellegrino Prisciani, un intellettuale eclettico tra la corte e il mondo. As a result, MIMA (Multi-disciplinary Interpretations model on Manuscript Apparatus) aims to formally represent these aspects by leveraging Semantic Web technologies and the systematic reuse of already existing ontologies.",
+		"language": "en",
+		"page": "6",
+		"source": "Zotero",
+		"title": "MIMA: a data model to represent multi-disciplinary analysis on manuscripts. Use case on Pellegrino Prisciani’s Historiae Ferrariae",
+		"author": [
+			{
+				"family": "Pasqual",
+				"given": "Valentina"
+			},
+			{
+				"family": "Daquino",
+				"given": "Marilena"
+			},
+			{
+				"family": "Tomasi",
+				"given": "Francesca"
+			}
+		]
+	},
+	{
+		"id": "http://zotero.org/users/local/OuVNkjN5/items/SPPGVZPE",
+		"type": "book",
+		"abstract": "XD is an agile methodology for knowledge graph construction focused on the continuous and iterative interaction between the\ndevelopment team and the testing team. This interaction is aimed at\nformally validating the resulting knowledge graphs with respect to clear\nontological commitments identified as competency questions. In this paper we present and demonstrate TESTaLOD, which is a tool designed\nand implemented for supporting the testing team of XD projects with\nan easy-to-use web-based toolbox.",
+		"note": "DOI: 10.13140/RG.2.2.25162.18885",
+		"source": "ResearchGate",
+		"title": "Agile Knowledge Graph Testing with TESTaLOD",
+		"author": [
+			{
+				"family": "Carriero",
+				"given": "Valentina"
+			},
+			{
+				"family": "Mariani",
+				"given": "Fabio"
+			},
+			{
+				"family": "Nuzzolese",
+				"given": "Andrea"
+			},
+			{
+				"family": "Pasqual",
+				"given": "Valentina"
+			},
+			{
+				"family": "Presutti",
+				"given": "Valentina"
+			}
+		],
+		"issued": {
+			"date_parts": [
+				[
+					"2019",
+					10,
+					2
+				]
+			]
+		}
+	}
+]
