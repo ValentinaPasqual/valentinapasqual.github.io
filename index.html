@@ -178,7 +178,7 @@
       <!-- Beautiful Rollovers -->
       <section>
          <div class="container-fluid">
-         <div class="row">
+         <div class="row mb-5 pb-5">
          <div id="gallery" class="col-12 tm-section-title-mb tm-gallery-title-col">
             <h2 class="tm-section-title-2">Projects</h2>
             <hr class="tm-section-title-underline" />
@@ -270,19 +270,20 @@
       <script>
          /* Open when someone clicks on the span element */
          function openNav() {
+            console.log(document.getElementById('hamburger'))
            $("#hamburger-line").removeClass('fixed-bottom') 
-           $("#hamburger-line").addClass('transparent-hamburger')
            document.getElementById("myNav").style.width = "100%";
-           document.getElementsByClassName('tm-social-icon-container-inner').style.visibility = "visible";
+           document.getElementById('hamburger').style.visibility = "hidden";
+
+
          }
          
          /* Close when someone clicks on the "x" symbol inside the overlay */
          function closeNav() {
+            document.getElementById('hamburger').style.visibility = "visible";
            $("#hamburger-line").addClass('fixed-bottom') 
-           $("#hamburger-line").removeClass('transparent-hamburger')
-           $("#hamburger-line").addClass('real-hamburger')
            document.getElementById("myNav").style.width = "0%";
-           document.getElementsByClassName('tm-social-icon-container-inner').style.visibility = "hidden";
+
          }
          
       </script>
