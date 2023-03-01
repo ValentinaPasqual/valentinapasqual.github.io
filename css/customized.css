@@ -76,6 +76,7 @@
 #myBtnContainer {
   text-align: right !important ;
   border-bottom: solid #656565 !important;
+  float:right
 }
 .filterDiv {
   float: left;
@@ -93,7 +94,7 @@
   float:left
 }
 
-/* Style the buttons */
+/* Style the buttons in publications */
 .filterbtn {
   border: none;
   outline: none;
@@ -120,5 +121,6 @@
 .filterDiv > span {
   color:#b0aeae}
 
-
-#myBtnContainer {float:right}
+#myBtnContainer2 {
+    border-bottom: solid #656565 !important;
+}

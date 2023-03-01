@@ -173,19 +173,22 @@
               <div
                  class="col-md-6 col-lg-6"
                  >
-                 <div class="tm-section-text-container-2">
+                 <div class="tm-section-text-container-3">
                     <h2
-                       class="tm-text-primary"
+                       class="tm-section-title-mb"
                        >
                        Relevant Activities
 
                     </h2>
-<div class="text-right w-100">
-                    <p> Curriculum vitae
-                     <a href="data/cv.pdf" target="__blank"><i class="fas fa-cloud-download-alt"></i></a></p></div>
+                  <div class="text-right w-100">
+                    <div id="myBtnContainer2">
+                    <button class="filterbtn btn"> Curriculum vitae
+                     <a href="data/cv.pdf" target="__blank"><i class="fas fa-cloud-download-alt"></i></a>
+                   </div>
+                 </div>
 
                      <div class="tm-text-gray">
-                       <div class="mb-4" id="cv_list"></div>
+                       <div class="mb-4 mt-3" id="cv_list"></div>
                     </div>
                  </div>
               </div>
@@ -270,6 +273,7 @@
                            var h4= document.createElement('h6');
                            var h5= document.createElement('span');
                            var p= document.createElement('p');
+                           var container = document.createElement('div');
                            var card = document.createElement('div');
                            h5.innerHTML = data[i].Timespan;
                            h5.classList.add('badge', 'badge-dark')
@@ -277,10 +281,16 @@
                            h4.style.fontWeight = "bold";
                            h4.style.fontSize = "120%";
                            p.innerHTML = data[i].ToOrganisation + '<br>' + data[i].Place;
-                           card.appendChild(h5);
+                           //card.appendChild(h5);
                            card.appendChild(h4);
                            card.appendChild(p);
-                           div.append(card)
+                           card.style.border = "black solid 1px"
+                           card.style.marginBottom = "0.5vw"
+                           card.style.padding = "1vw"
+                           container.appendChild(h5)
+                           container.appendChild(card)
+                           div.append(container)
+                           //document.createElement('p');
                        });listDiv.appendChild(div);
                    });
 
