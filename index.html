@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/bootstrap.min.css" />
       <link rel="stylesheet" href="css/templatemo-style.css" />
-      <!--AJAX FOR ALL IMPORTS-->  
+      <!--AJAX FOR ALL IMPORTS-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <style>
@@ -33,7 +33,7 @@
       <div class="columns-bg">
 
 
-      <!-- NAV BAR OVERALAY AND FIXED -->  
+      <!-- NAV BAR OVERALAY AND FIXED -->
 
 
       <!-- The overlay -->
@@ -75,7 +75,7 @@
             <i class="fab fa-github"></i>
             </span>
             </a>
-            
+
             <button class="m-1 btn-lg float-right" id="hamburger" onclick="openNav()">&#9776;</button>
          </div>
       </div>
@@ -110,7 +110,7 @@
                   <div class="tm-section-text-container">
                      <i class="tm-text-white">
                         <p class="pb-1" style="font-size:70%">
-                           Hi, my name is Valentina Pasqual and I am a PhD student at Univeristy of Bologna. I'm mainly interested in Semantic Web technologies (LOD) applied to GLAM domain. 
+                           Hi, my name is Valentina Pasqual and I am a PhD student at Univeristy of Bologna. I'm mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
                         </p>
                      </i>
                   </div>
@@ -127,39 +127,47 @@
                     <h2 class="tm-section-title-mb">
                        Publications
                     </h2>
-                    <p>
-                       [Conference Proceedings] Bisceglia, Marta R., Martina Merenda, Vlentina Pasqual, Adriana Iezzi. New Forms of Calligraphy in Contemporary China. EACS 2022, Olomuc (Repubblica Ceca).
-                    </p>
-                    <p>
-                       [Conference Proceedings] Valentina Pasqual, Marta R. Bisceglia, Martina Merenda, Adriana Iezzi, Francesca Tomasi. 2022. <i>Modeling Chinese Contemporary Calligraphy: the WRITE Dataset</i>. DH2022, Tokyo (Japan).
-                    </p>
-                    <p>
-                       [Conference Proceedings] Baroncini, Sofia, Marilena Daquino, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Representing uncertainty and cultural bias with Semantic Web technologies</i>. DH2022, Tokyo (Japan).
-                    </p>
-                    <p>
-                       [Conference Proceedings] Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Conjectures: using RDF in critical discourse in the humanities</i>. COMHUM conference, Lousanne (Switzerland). 
-                    </p>   
-                    <p>
-                       [Conference Proceedings] Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Expressing Without Asserting in the Arts</i>. IRCDL 2022, Pisa (Italy).
-                    </p>
-                    <p>
-                       [Journal article] Pasqual, Valentina, e Francesca Tomasi. 2022. <i>Linked Open Data Per La Valorizzazione Di Collezioni Culturali: Il Dataset MythLOD</i>. AIB Studi 62 (1):149-68. https://doi.org/10.2426/aibstudi-13301.
-                    </p>
-                    <p>
-                       [Journal article] Brancato, Dario, Milena Corbellini, Paola Italia, Valentina Pasqual, and Roberta Priore. 2021. <i>VaSto : Un’edizione Digitale Interdisciplinare</i>. Magazén, no. 1: JournalArticle_5057. <a href="https://doi.org/10.30687/mag/2724-3923/2021/03/006">https://doi.org/10.30687/mag/2724-3923/2021/03/006</a>.
-                    </p>
-                    <p>
-                       [Journal article] Daquino, Marilena, Valentina Pasqual, and Francesca Tomasi. 2021. <i>Knowledge Representation of Digital Hermeneutics of Archival and Literary Sources</i>. JLIS.It 11, no. 3: 59–76. <a href="https://doi.org/10.4403/jlis.it-12642">https://doi.org/10.4403/jlis.it-12642</a>.
-                    </p>
-                    <p>
-                       [Conference Proceedings] Pasqual, Valentina, Marilena Daquino, and Francesca Tomasi. 2021. <i>MIMA: A Data Model to Represent Multi-Disciplinary Analysis on Manuscripts. Use Case on Pellegrino Prisciani’s Historiae Ferrariae</i>, 6.
-                    </p>
-                    <p>
-                       [Technical report] Morales Tirado, Alba, Allard Oelen, Valentina Pasqual, Meilin Shi, Alessandro Umbrico, Weiqin Xu, and Irene Celino. 2020. <i>A Human-in-the-Loop Framework to Handle Implicit Bias in Crowdsourced KGs</i>, 101–8. Bertinoro, Italy, 2020. <a href="https://arxiv.org/pdf/2012.11936.pdf">https://arxiv.org/pdf/2012.11936.pdf</a>.
-                    </p>
-                    <p>
-                       [Conference Proceedings] Carriero, Valentina, Fabio Mariani, Andrea Nuzzolese, Valentina Pasqual, and Valentina Presutti. 2019. <i>Agile Knowledge Graph Testing with TESTaLOD</i>. <a href="https://doi.org/10.13140/RG.2.2.25162.18885">https://doi.org/10.13140/RG.2.2.25162.18885</a>.
-                    </p>
+                    <div id="myBtnContainer">
+                      <button class="filterbtn active btn" onclick="filterSelection('all')">Show all</button>
+                      <button class="filterbtn btn" onclick="filterSelection('article')">Journal Articles</button>
+                      <button class="filterbtn btn" onclick="filterSelection('proceedings')">Conference Proceedings</button>
+                      <button class="filterbtn btn" onclick="filterSelection('others')">Others</button>
+                    </div>
+                    <div class="publicationsContainer animate" id="publications" >
+                    <div class="filterDiv proceedings">
+                       <span>[Conference Proceedings]</span> Bisceglia, Marta R., Martina Merenda, Valentina Pasqual, Adriana Iezzi. 2022. <i>New Forms of Calligraphy in Contemporary China</i>. EACS 2022, Olomuc (Repubblica Ceca). <a href="https://easychair.org/smart-program/EACS2022/">Conference Program</a>.
+                    </div>
+                    <div class="filterDiv proceedings">
+                       <span>[Conference Proceedings]</span> Valentina Pasqual, Marta R. Bisceglia, Martina Merenda, Adriana Iezzi, Francesca Tomasi. 2022. <i>Modeling Chinese Contemporary Calligraphy: the WRITE Dataset</i>. DH2022, Tokyo (Japan). <a href="https://dh2022.dhii.asia/dh2022bookofabsts.pdf">PDF</a>.
+                    </div>
+                    <div class="filterDiv proceedings">
+                       <span>[Conference Proceedings]</span> Baroncini, Sofia, Marilena Daquino, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Representing uncertainty and cultural bias with Semantic Web technologies</i>. DH2022, Tokyo (Japan). <a href="https://dh2022.dhii.asia/dh2022bookofabsts.pdf">PDF</a>.
+                    </div>
+                    <div class="filterDiv proceedings">
+                       <span>[Conference Proceedings]</span> Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Conjectures: using RDF in critical discourse in the humanities</i>. In Proceedings COMHUM conference, Lousanne (Switzerland). <a href="https://wp.unil.ch/llist/files/2022/06/COMHUM_2022_paper_10.pdf">PDF</a>.
+                    </div>
+                    <div class="filterDiv proceedings">
+                      <span>[Conference Proceedings]</span> Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Expressing Without Asserting in the Arts</i>. In Proceedings IRCDL 2022, Pisa (Italy), CEUR. <a href="https://ceur-ws.org/Vol-3160/short14.pdf">PDF</a>.
+                    </div>
+                    <div class="filterDiv article">
+                       <span>[Journal article]</span> Pasqual, Valentina, e Francesca Tomasi. 2022. <i>Linked Open Data Per La Valorizzazione Di Collezioni Culturali: Il Dataset MythLOD</i>. AIB Studi 62 (1):149-68. <a href="https://doi.org/10.2426/aibstudi-13301">https://doi.org/10.2426/aibstudi-13301</a>.
+                    </div>
+                    <div class="filterDiv article">
+                       <span>[Journal article]</span> Brancato, Dario, Milena Corbellini, Paola Italia, Valentina Pasqual, and Roberta Priore. 2021. <i>VaSto : Un’edizione Digitale Interdisciplinare</i>. Magazén, no. 1: JournalArticle_5057. <a href="https://doi.org/10.30687/mag/2724-3923/2021/03/006">https://doi.org/10.30687/mag/2724-3923/2021/03/006</a>.
+                    </div>
+                    <div class="filterDiv article">
+                       <span>[Journal article]</span> Daquino, Marilena, Valentina Pasqual, and Francesca Tomasi. 2021. <i>Knowledge Representation of Digital Hermeneutics of Archival and Literary Sources</i>. JLIS.It 11, no. 3: 59–76. <a href="https://doi.org/10.4403/jlis.it-12642">https://doi.org/10.4403/jlis.it-12642</a>.
+                    </div>
+                    <div class="filterDiv proceedings">
+                       <span>[Conference Proceedings]</span> Pasqual, Valentina, Marilena Daquino, and Francesca Tomasi. 2021. <i>MIMA: A Data Model to Represent Multi-Disciplinary Analysis on Manuscripts. Use Case on Pellegrino Prisciani’s Historiae Ferrariae</i>, 6. <a href="https://aiucd2021.labcd.unipi.it/wp-content/uploads/2021/05/AIUCD2021_BOA-versione3A.pdf">PDF</a>
+                    </div>
+                    <div class="filterDiv others">
+                       <span>[Technical report]</span> Morales Tirado, Alba, Allard Oelen, Valentina Pasqual, Meilin Shi, Alessandro Umbrico, Weiqin Xu, and Irene Celino. 2020. <i>A Human-in-the-Loop Framework to Handle Implicit Bias in Crowdsourced KGs</i>, 101–8. Bertinoro, Italy, 2020. <a href="https://arxiv.org/pdf/2012.11936.pdf">https://arxiv.org/pdf/2012.11936.pdf</a>.
+                    </div>
+                    <div class="filterDiv proceedings">
+                       <span>[Conference Proceedings]</span> Carriero, Valentina, Fabio Mariani, Andrea Nuzzolese, Valentina Pasqual, and Valentina Presutti. 2019. <i>Agile Knowledge Graph Testing with TESTaLOD</i>. <a href="https://doi.org/10.13140/RG.2.2.25162.18885">https://doi.org/10.13140/RG.2.2.25162.18885</a>.
+                    </div>
+                  </div>
                  </div>
               </div>
               <div
@@ -175,8 +183,8 @@
 <div class="text-right w-100">
                     <p> Curriculum vitae
                      <a href="data/cv.pdf" target="__blank"><i class="fas fa-cloud-download-alt"></i></a></p></div>
-                    
-                     <div class="tm-text-gray">    
+
+                     <div class="tm-text-gray">
                        <div class="mb-4" id="cv_list"></div>
                     </div>
                  </div>
@@ -184,15 +192,6 @@
            </div>
         </div>
      </section>
-     
-
-
-
-
-
-
-
-
 
       <!-- Beautiful Rollovers -->
       <section>
@@ -261,11 +260,11 @@
 
 </div>
 
-   
+
       <script>
          var listDiv = document.getElementById('cv_list');
                var div=document.createElement('div');
-               
+
                $.getJSON('data/cv.json', function(data) {
                        $.each(data, function(i) {
                            var h4= document.createElement('h6');
@@ -282,29 +281,81 @@
                            card.appendChild(h4);
                            card.appendChild(p);
                            div.append(card)
-                       });listDiv.appendChild(div); 
+                       });listDiv.appendChild(div);
                    });
-         
+
       </script>
       <script>
          /* Open when someone clicks on the span element */
          function openNav() {
             console.log(document.getElementById('hamburger'))
-           $("#hamburger-line").removeClass('fixed-bottom') 
+           $("#hamburger-line").removeClass('fixed-bottom')
            document.getElementById("myNav").style.width = "100%";
            document.getElementById('hamburger').style.visibility = "hidden";
 
 
          }
-         
+
          /* Close when someone clicks on the "x" symbol inside the overlay */
          function closeNav() {
             document.getElementById('hamburger').style.visibility = "visible";
-           $("#hamburger-line").addClass('fixed-bottom') 
+           $("#hamburger-line").addClass('fixed-bottom')
            document.getElementById("myNav").style.width = "0%";
 
          }
-         
+
+         // PUBLICATIONS FILTERS
+
+         filterSelection("all")
+          function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+              w3RemoveClass(x[i], "show");
+              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+          }
+
+          // Show filtered elements
+          function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+              }
+            }
+          }
+
+          // Hide elements that are not selected
+          function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+              }
+            }
+            element.className = arr1.join(" ");
+          }
+
+          // Add active class to the current control button (highlight it)
+          var btnContainer = document.getElementById("myBtnContainer");
+          var btns = btnContainer.getElementsByClassName("btn");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+
+            });
+          }
+
+
       </script>
    </body>
 </html>

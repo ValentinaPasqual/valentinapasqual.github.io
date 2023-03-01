@@ -9,10 +9,10 @@
     scrollbar-width: none;  /* Firefox */
     }
     figure {box-sizing: inherit !important}
-    img { text-align: center; margin: auto; background-color: #ccc; padding:auto} 
+    img { text-align: center; margin: auto; background-color: #ccc; padding:auto}
     /* The Overlay (background) */
     .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
@@ -69,3 +69,56 @@
     .tm-section-4 > * {font-size:0.6rem}
     a {color:#F5DF4D;}
     figcaption {font-size:0.8em}
+
+
+/* FILTER BAR IN PUBLICATIONS */
+
+#myBtnContainer {
+  text-align: right !important ;
+  border-bottom: solid #656565 !important;
+}
+.filterDiv {
+  float: left;
+  display: none;
+  padding-bottom:1vw
+}
+
+.show {
+  display: block;
+}
+
+.publicationsContainer {
+  margin-top: 20px;
+  overflow: hidden;
+  float:left
+}
+
+/* Style the buttons */
+.filterbtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #656565 !important;
+  font-size: 10px !important;
+  padding:1vw !important;
+  box-shadow: transparent !important;
+}
+
+.filterbtn:focus {
+  box-shadow: 0 0 0 0.0rem rgb(0 0 0 / 25%) !important
+}
+
+.filterbtn:hover {
+  color: #b0aeae !important
+}
+
+.filterbtn.active {
+  background-color: #transparent !important;
+  color: white !important
+}
+
+.filterDiv > span {
+  color:#b0aeae}
+
+
+#myBtnContainer {float:right}
