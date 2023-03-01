@@ -70,6 +70,18 @@
     a {color:#F5DF4D;}
     figcaption {font-size:0.8em}
 
+#galleryContainer {
+  border: 1px solid black;
+  background-color: white !important;
+  padding:2vw;
+}
+
+@media only screen and (max-width: 768px) {
+  #relevantActivities {
+    background-color: white;
+  }
+}
+
 
 /* FILTER BAR IN PUBLICATIONS */
 
