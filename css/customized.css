@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+h1, h2, h3, .badge {
+  font-family: 'Major Mono Display', monospace !important
+}
 
+* {
+  font-family: 'Fragment Mono', monospace;
+  }
     /* Hide scrollbar for Chrome, Safari and Opera */
     .hide-scroll::-webkit-scrollbar {
     display: none;
@@ -75,6 +83,7 @@
   background-color: white !important;
   padding:2vw;
 }
+
 
 @media only screen and (max-width: 768px) {
   #relevantActivities {
