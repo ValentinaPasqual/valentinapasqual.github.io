@@ -250,6 +250,8 @@
       <script>
          var listDiv = document.getElementById('cv_list');
                var div=document.createElement('div');
+               var rev=document.createElement('div');
+
 
                $.getJSON('data/cv.json', function(data) {
                        $.each(data, function(i) {
