@@ -288,6 +288,7 @@
                            var p= document.createElement('p');
                            var container = document.createElement('div');
                            var card = document.createElement('div');
+                           console.log(card)
                            h5.innerHTML = data[i].Timespan;
                            h5.classList.add('badge', 'badge-dark')
                            h4.innerHTML = data[i].ActivityLabel;
@@ -304,7 +305,8 @@
                            container.appendChild(card)
                            div.append(container)
                            //document.createElement('p');
-                       });listDiv.appendChild(div);
+                       }) ;
+                  listDiv.appendChild(div);
                    });
 
       </script>
