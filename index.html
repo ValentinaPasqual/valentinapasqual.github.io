@@ -5,278 +5,276 @@
       <link rel="icon" href="img/favicon.ico"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
-      <!-- Google web font "Open Sans" -->
-      <link rel="stylesheet" href="css/customized.css" />
-      <link rel="stylesheet" href="css/all.min.css" />
-      <link rel="stylesheet" href="css/bootstrap.min.css" />
-      <link rel="stylesheet" href="css/templatemo-style.css" />
+      <!-- BOOTSTRAP -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <!--AJAX FOR ALL IMPORTS-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <style>
-
-@font-face {
-    font-family: myFirstFont;
-    src: url(webfonts/Circular/CircularStd-Book.otf);
-    }
-
-    a {color:#F5DF4D !important}
-      </style>
-      <title>Valentina Pasqual</title>
+      <link href="css/style.css" rel="stylesheet">
    </head>
    <!--
       Sided Template
       https://templatemo.com/tm-527-sided
       -->
-   <body style="font-family: myFirstFont!important">
+   <body>
+
+     <!-- NAVBAR -->
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#"></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="#">Intro</a>
+         </li>
+         <i class="bi bi-triangle-half"></i>
+         <i class="bi bi-caret-down-fill"></i>
+
+         <li class="nav-item">
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#curriculumModal">
+             CURRICULUM
+           </button>
+         </li>
+         <li class="nav-item">
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#publicationModal">
+             PUBLICATIONS
+           </button>
+         </li>
+         <li class="nav-item">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectsModal">
+            PROJECTS
+          </button>
+         </li>
+
+       </ul>
+
+     </div>
+   </div>
+ </nav>
+
       <div class="columns-bg">
 
 
-      <!-- NAV BAR OVERALAY AND FIXED -->
-
-
-      <!-- The overlay -->
-      <nav id="myNav" class="overlay">
-         <!-- Button to close the overlay navigation -->
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <!-- Overlay content -->
-         <div class="overlay-content">
-            <div><a href="#logo" onclick="closeNav()">Hi!</a></div>
-            <div><span class="m-0 p-0 overlay-slashes"><a href="#section_4" onclick="closeNav()">Publications</a> &#92;&#92; <a href="#section_4" onclick="closeNav()">Relevant Activities</a></span></div>
-            <div><a href="#gallery" onclick="closeNav()">Projects</a></div>
-            <div class="m-md-5">
-               <p class="tm-copyright-text mb-0 tm-text-primary">
-                  Powered by <a rel="nofollow" href="https://www.facebook.com/templatemo">TemplateMo</a>
-               </p>
-            </div>
-         </div>
-      </nav>
-      <!-- Use any element to open/show the overlay navigation menu -->
-      <div class="fixed-bottom" id="hamburger-line">
-         <div class="tm-section-text-container-6 m-0 p-0 pt-2 ml-1">
-            <a class="tm-social-icon-container" target="blank" href="https://www.linkedin.com/in/valentina-pasqual-96791017b/">
-            <span class="tm-social-icon-container-inner">
-            <i class="fab fa-linkedin-in"></i>
-            </span>
-            </a>
-            <a class="tm-social-icon-container" href="https://twitter.com/valepasqual" target="__blank">
-            <span class="tm-social-icon-container-inner">
-            <i class="fab fa-twitter"></i>
-            </span>
-            </a>
-            <a class="tm-social-icon-container" href="https://scholar.google.it/citations?user=EVUFJkAAAAAJ&hl=it&oi=ao" target="__blank">
-            <span class="tm-social-icon-container-inner">
-            <i class="fas fa-graduation-cap"></i>
-            </span>
-            </a>
-            <a class="tm-social-icon-container" href="https://github.com/ValentinaPasqual" target="__blank">
-            <span class="tm-social-icon-container-inner">
-            <i class="fab fa-github"></i>
-            </span>
-            </a>
-
-            <button class="m-1 btn-lg float-right" id="hamburger" onclick="openNav()">&#9776;</button>
-         </div>
-      </div>
 
 
 
       <!-- Logo & Intro -->
 
+      <div class="main m-md-5 p-md-5">
+
       <section id="intro" class="tm-section-logo">
          <div class="container-fluid" id="introContainer">
             <div class="row">
 
-              <div class="col-md-3">
-                     <i class="tm-text-white">
-                        <p class="pt-5" style="font-size:70%">
-                           Hi, my name is Valentina Pasqual and I am a PhD student at Univeristy of Bologna. I'm mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
+              <div class="col-md-6">
+                        <p class="pt-5">
+                           Hi, my name is <span class="green-text">Valentina Pasqual</span> and I am a PhD student at Univeristy of Bologna. I'm mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
                         </p>
-                     </i>
+                        <hr>
                 </div>
                <div class="col-md-6">
                        <img src="img/drawing-1.svg" style="width:25em; float:center" src="img/photo.jpeg">
                </div>
-               <div class="col-md-3">
-                 <i class="tm-text-white">
-                 <p class="pt-5" style="font-size:70%; position : absolute;bottom:0">
-                    Hi, my name is Valentina Pasqual and I am a PhD student at Univeristy of Bologna. I'm mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
-                 </p>
-               </i>
-
-               </div>
 
 
                </div>
                </div>
       </section>
 
-      <section id="section_4" class="tm-section-4 float-left ml-sm-4">
-        <div class="container-fluid">
-           <div class="row">
-              <div class="col-md-6 col-lg-6">
-                 <div class="tm-section-text-container-3" style="color:white">
-                    <h2 class="tm-section-title-mb">
-                       Publications
-                    </h2>
-                    <div id="myBtnContainer">
-                      <button class="filterbtn active btn" onclick="filterSelection('all')">Show all</button>
-                      <button class="filterbtn btn" onclick="filterSelection('article')">Journal Articles</button>
-                      <button class="filterbtn btn" onclick="filterSelection('proceedings')">Conference Proceedings</button>
-                      <button class="filterbtn btn" onclick="filterSelection('others')">Others</button>
-                    </div>
-                    <div class="publicationsContainer animate" id="publications" >
-                    <div class="filterDiv proceedings">
-                       <span>[Conference Proceedings]</span> Bisceglia, Marta R., Martina Merenda, Valentina Pasqual, Adriana Iezzi. 2022. <i>New Forms of Calligraphy in Contemporary China</i>. EACS 2022, Olomuc (Czech Republic). <a href="https://easychair.org/smart-program/EACS2022/">Conference Program</a>.
-                    </div>
-                    <div class="filterDiv proceedings">
-                       <span>[Conference Proceedings]</span> Valentina Pasqual, Marta R. Bisceglia, Martina Merenda, Adriana Iezzi, Francesca Tomasi. 2022. <i>Modeling Chinese Contemporary Calligraphy: the WRITE Dataset</i>. DH2022, Tokyo (Japan). <a href="https://dh2022.dhii.asia/dh2022bookofabsts.pdf">PDF</a>.
-                    </div>
-                    <div class="filterDiv proceedings">
-                       <span>[Conference Proceedings]</span> Baroncini, Sofia, Marilena Daquino, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Representing uncertainty and cultural bias with Semantic Web technologies</i>. DH2022, Tokyo (Japan). <a href="https://dh2022.dhii.asia/dh2022bookofabsts.pdf">PDF</a>.
-                    </div>
-                    <div class="filterDiv proceedings">
-                       <span>[Conference Proceedings]</span> Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Conjectures: using RDF in critical discourse in the humanities</i>. In Proceedings COMHUM conference, Lousanne (Switzerland). <a href="https://wp.unil.ch/llist/files/2022/06/COMHUM_2022_paper_10.pdf">PDF</a>.
-                    </div>
-                    <div class="filterDiv proceedings">
-                      <span>[Conference Proceedings]</span> Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Expressing Without Asserting in the Arts</i>. In Proceedings IRCDL 2022, Pisa (Italy), CEUR. <a href="https://ceur-ws.org/Vol-3160/short14.pdf">PDF</a>.
-                    </div>
-                    <div class="filterDiv article">
-                       <span>[Journal article]</span> Pasqual, Valentina, e Francesca Tomasi. 2022. <i>Linked Open Data Per La Valorizzazione Di Collezioni Culturali: Il Dataset MythLOD</i>. AIB Studi 62 (1):149-68. <a href="https://doi.org/10.2426/aibstudi-13301">https://doi.org/10.2426/aibstudi-13301</a>.
-                    </div>
-                    <div class="filterDiv article">
-                       <span>[Journal article]</span> Brancato, Dario, Milena Corbellini, Paola Italia, Valentina Pasqual, and Roberta Priore. 2021. <i>VaSto : Un’edizione Digitale Interdisciplinare</i>. Magazén, no. 1: JournalArticle_5057. <a href="https://doi.org/10.30687/mag/2724-3923/2021/03/006">https://doi.org/10.30687/mag/2724-3923/2021/03/006</a>.
-                    </div>
-                    <div class="filterDiv article">
-                       <span>[Journal article]</span> Daquino, Marilena, Valentina Pasqual, and Francesca Tomasi. 2021. <i>Knowledge Representation of Digital Hermeneutics of Archival and Literary Sources</i>. JLIS.It 11, no. 3: 59–76. <a href="https://doi.org/10.4403/jlis.it-12642">https://doi.org/10.4403/jlis.it-12642</a>.
-                    </div>
-                    <div class="filterDiv proceedings">
-                       <span>[Conference Proceedings]</span> Pasqual, Valentina, Marilena Daquino, and Francesca Tomasi. 2021. <i>MIMA: A Data Model to Represent Multi-Disciplinary Analysis on Manuscripts. Use Case on Pellegrino Prisciani’s Historiae Ferrariae</i>, 6. <a href="https://aiucd2021.labcd.unipi.it/wp-content/uploads/2021/05/AIUCD2021_BOA-versione3A.pdf">PDF</a>
-                    </div>
-                    <div class="filterDiv others">
-                       <span>[Technical report]</span> Morales Tirado, Alba, Allard Oelen, Valentina Pasqual, Meilin Shi, Alessandro Umbrico, Weiqin Xu, and Irene Celino. 2020. <i>A Human-in-the-Loop Framework to Handle Implicit Bias in Crowdsourced KGs</i>, 101–8. Bertinoro, Italy, 2020. <a href="https://arxiv.org/pdf/2012.11936.pdf">https://arxiv.org/pdf/2012.11936.pdf</a>.
-                    </div>
-                    <div class="filterDiv proceedings">
-                       <span>[Conference Proceedings]</span> Carriero, Valentina, Fabio Mariani, Andrea Nuzzolese, Valentina Pasqual, and Valentina Presutti. 2019. <i>Agile Knowledge Graph Testing with TESTaLOD</i>. <a href="https://doi.org/10.13140/RG.2.2.25162.18885">https://doi.org/10.13140/RG.2.2.25162.18885</a>.
-                    </div>
-                  </div>
-                 </div>
-              </div>
-              <div
-                 class="col-md-6 col-lg-6"
-                 >
-                 <div class="tm-section-text-container-3" id="relevantActivities">
-                    <h2 class="tm-section-title-mb">
-                       Relevant Activities
 
-                    </h2>
-                  <div class="text-right w-100">
-                    <div id="myBtnContainer2">
+<!-- Modal -->
+  <section id="publications">
+<div class="modal fade" id="publicationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Publications</h5>
+      </div>
+      <div class="modal-body">
+        <div id="myBtnContainer">
+          <button class="filterbtn active btn" onclick="filterSelection('all')">Show all</button>
+          <button class="filterbtn btn" onclick="filterSelection('article')">Journal Articles</button>
+          <button class="filterbtn btn" onclick="filterSelection('proceedings')">Conference Proceedings</button>
+          <button class="filterbtn btn" onclick="filterSelection('others')">Others</button>
+        </div>
+        <div class="publicationsContainer animate" id="publications" >
+        <div class="filterDiv proceedings">
+           <span>[Conference Proceedings]</span> Bisceglia, Marta R., Martina Merenda, Valentina Pasqual, Adriana Iezzi. 2022. <i>New Forms of Calligraphy in Contemporary China</i>. EACS 2022, Olomuc (Czech Republic). <a href="https://easychair.org/smart-program/EACS2022/">Conference Program</a>.
+        </div>
+        <div class="filterDiv proceedings">
+           <span>[Conference Proceedings]</span> Valentina Pasqual, Marta R. Bisceglia, Martina Merenda, Adriana Iezzi, Francesca Tomasi. 2022. <i>Modeling Chinese Contemporary Calligraphy: the WRITE Dataset</i>. DH2022, Tokyo (Japan). <a href="https://dh2022.dhii.asia/dh2022bookofabsts.pdf">PDF</a>.
+        </div>
+        <div class="filterDiv proceedings">
+           <span>[Conference Proceedings]</span> Baroncini, Sofia, Marilena Daquino, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Representing uncertainty and cultural bias with Semantic Web technologies</i>. DH2022, Tokyo (Japan). <a href="https://dh2022.dhii.asia/dh2022bookofabsts.pdf">PDF</a>.
+        </div>
+        <div class="filterDiv proceedings">
+           <span>[Conference Proceedings]</span> Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Conjectures: using RDF in critical discourse in the humanities</i>. In Proceedings COMHUM conference, Lousanne (Switzerland). <a href="https://wp.unil.ch/llist/files/2022/06/COMHUM_2022_paper_10.pdf">PDF</a>.
+        </div>
+        <div class="filterDiv proceedings">
+          <span>[Conference Proceedings]</span> Daquino, Marilena, Valentina Pasqual, Francesca Tomasi, Fabio Vitali. 2022. <i>Expressing Without Asserting in the Arts</i>. In Proceedings IRCDL 2022, Pisa (Italy), CEUR. <a href="https://ceur-ws.org/Vol-3160/short14.pdf">PDF</a>.
+        </div>
+        <div class="filterDiv article">
+           <span>[Journal article]</span> Pasqual, Valentina, e Francesca Tomasi. 2022. <i>Linked Open Data Per La Valorizzazione Di Collezioni Culturali: Il Dataset MythLOD</i>. AIB Studi 62 (1):149-68. <a href="https://doi.org/10.2426/aibstudi-13301">https://doi.org/10.2426/aibstudi-13301</a>.
+        </div>
+        <div class="filterDiv article">
+           <span>[Journal article]</span> Brancato, Dario, Milena Corbellini, Paola Italia, Valentina Pasqual, and Roberta Priore. 2021. <i>VaSto : Un’edizione Digitale Interdisciplinare</i>. Magazén, no. 1: JournalArticle_5057. <a href="https://doi.org/10.30687/mag/2724-3923/2021/03/006">https://doi.org/10.30687/mag/2724-3923/2021/03/006</a>.
+        </div>
+        <div class="filterDiv article">
+           <span>[Journal article]</span> Daquino, Marilena, Valentina Pasqual, and Francesca Tomasi. 2021. <i>Knowledge Representation of Digital Hermeneutics of Archival and Literary Sources</i>. JLIS.It 11, no. 3: 59–76. <a href="https://doi.org/10.4403/jlis.it-12642">https://doi.org/10.4403/jlis.it-12642</a>.
+        </div>
+        <div class="filterDiv proceedings">
+           <span>[Conference Proceedings]</span> Pasqual, Valentina, Marilena Daquino, and Francesca Tomasi. 2021. <i>MIMA: A Data Model to Represent Multi-Disciplinary Analysis on Manuscripts. Use Case on Pellegrino Prisciani’s Historiae Ferrariae</i>, 6. <a href="https://aiucd2021.labcd.unipi.it/wp-content/uploads/2021/05/AIUCD2021_BOA-versione3A.pdf">PDF</a>
+        </div>
+        <div class="filterDiv others">
+           <span>[Technical report]</span> Morales Tirado, Alba, Allard Oelen, Valentina Pasqual, Meilin Shi, Alessandro Umbrico, Weiqin Xu, and Irene Celino. 2020. <i>A Human-in-the-Loop Framework to Handle Implicit Bias in Crowdsourced KGs</i>, 101–8. Bertinoro, Italy, 2020. <a href="https://arxiv.org/pdf/2012.11936.pdf">https://arxiv.org/pdf/2012.11936.pdf</a>.
+        </div>
+        <div class="filterDiv proceedings">
+           <span>[Conference Proceedings]</span> Carriero, Valentina, Fabio Mariani, Andrea Nuzzolese, Valentina Pasqual, and Valentina Presutti. 2019. <i>Agile Knowledge Graph Testing with TESTaLOD</i>. <a href="https://doi.org/10.13140/RG.2.2.25162.18885">https://doi.org/10.13140/RG.2.2.25162.18885</a>.
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="modal fade" id="curriculumModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Relevant Activities</h1>
+      </div>
+      <div class="modal-body">
+        <div id="myBtnContainer2">
                     <button class="filterbtn btn"> Curriculum vitae
                      <a href="data/cv.pdf" target="__blank"><i class="fas fa-cloud-download-alt"></i></a>
-                   </div>
-                 </div>
+                   </button></div>
+        <div class="mb-4 mt-3" id="cv_list"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                     <div class="tm-text-gray">
-                       <div class="mb-4 mt-3" id="cv_list"></div>
-                    </div>
-                 </div>
+<!-- Modal -->
+<div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Projects</h1>
+      </div>
+      <div class="modal-body">
+        <!-- Beautiful Rollovers -->
+        <section>
+           <div class="container-fluid">
+           <div class="row mb-5 pb-5" id="galleryContainer">
+
+           <div class="col-sm-12">
+              <div class="grid">
+                <figure class="effect-duke">
+                   <img
+                      src="img/vasto1.png"
+                      alt="Image"
+                      class="img-fluid"
+                      />
+                   <figcaption>
+                      <h2><span>TESTaLOD</span> \\ Web App</span></h2>
+                      <p>Description</a></p>
+                   </figcaption>
+                </figure>
+                 <figure class="effect-duke mb-3">
+                    <img
+                       src="img/write1.png"
+                       alt="Image"
+                       class="img-fluid"
+                       />
+                    <figcaption>
+                       <h2><span>WRITE</span> \\ </br> Digital Archive</h2>
+                       <p>The archive of Contemporary Calligraphy. The registry is private since the project is still under development. Hope to share the link soon!  </p>
+                       <a href="#">View more</a>
+                    </figcaption>
+                 </figure>
+                 <figure class="effect-duke">
+                    <img
+                       src="img/mythLOD1.png"
+                       alt="Image"
+                       class="img-fluid"
+                       />
+                    <figcaption>
+                       <h2><span>mythLOD</span> \\</br> Digital Collection</h2>
+                       <p>A semantic collection of museal artefacts representing mythology and their relation with literature</br>
+                          <a href="http://dharc-org.github.io/mythlod" target="__blank">View Here</a>
+                       </p>
+                    </figcaption>
+                 </figure>
+                 <figure class="effect-duke mb-3">
+                    <img
+                       src="img/vasto1.png"
+                       alt="Image"
+                       class="img-fluid"
+                       />
+                    <figcaption>
+                       <h2><span>VaSto</span> \\ </br> Digital Edition</h2>
+                       <p>The critical and diplomatic edition of Storia Fiorentina by Benedetto Varchi</br>
+                          <a href="http://dharc-org.github.io/progetto-vasto" target="__blank">View Here</a>
+                       </p>
+                    </figcaption>
+                 </figure>
+                 <figure class="effect-duke">
+                    <img
+                       src="img/mima1.png"
+                       alt="Image"
+                       class="img-fluid"
+                       />
+                    <figcaption>
+                       <h2><span>MIMA</span> \\ Datamodel</span></h2>
+                       <p>Semantic modelling of different points of view over the same artefact. Use case on Historiae Ferrariae by Pellegrino Prisciani</br><a href="http://mima-data-model.github.io/mima-documentation" target="__blank">View Here</a></p>
+                    </figcaption>
+                 </figure>
+                 <figure class="effect-duke">
+                    <img
+                       src="img/vasto1.png"
+                       alt="Image"
+                       class="img-fluid"
+                       />
+                    <figcaption>
+                       <h2><span>ODI and BACODI</span> \\ Ontology and Knowledge Base</span></h2>
+                       <p>Description</a></p>
+                    </figcaption>
+                 </figure>
               </div>
            </div>
-        </div>
-     </section>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <!-- Beautiful Rollovers -->
-      <section>
-         <div class="container-fluid">
-         <div class="row mb-5 pb-5" id="galleryContainer">
-         <div id="gallery" class="col-12 tm-section-title-mb tm-gallery-title-col">
-            <h2 class="tm-section-title-2">Projects</h2>
-            <hr class="tm-section-title-underline" />
-         </div>
-         <div class="col-sm-12">
-            <div class="grid">
-              <figure class="effect-duke">
-                 <img
-                    src="img/vasto1.png"
-                    alt="Image"
-                    class="img-fluid"
-                    />
-                 <figcaption>
-                    <h2><span>TESTaLOD</span> \\ Web App</span></h2>
-                    <p>Description</a></p>
-                 </figcaption>
-              </figure>
-               <figure class="effect-duke mb-3">
-                  <img
-                     src="img/write1.png"
-                     alt="Image"
-                     class="img-fluid"
-                     />
-                  <figcaption>
-                     <h2><span>WRITE</span> \\ </br> Digital Archive</h2>
-                     <p>The archive of Contemporary Calligraphy. The registry is private since the project is still under development. Hope to share the link soon!  </p>
-                     <a href="#">View more</a>
-                  </figcaption>
-               </figure>
-               <figure class="effect-duke">
-                  <img
-                     src="img/mythLOD1.png"
-                     alt="Image"
-                     class="img-fluid"
-                     />
-                  <figcaption>
-                     <h2><span>mythLOD</span> \\</br> Digital Collection</h2>
-                     <p>A semantic collection of museal artefacts representing mythology and their relation with literature</br>
-                        <a href="http://dharc-org.github.io/mythlod" target="__blank">View Here</a>
-                     </p>
-                  </figcaption>
-               </figure>
-               <figure class="effect-duke mb-3">
-                  <img
-                     src="img/vasto1.png"
-                     alt="Image"
-                     class="img-fluid"
-                     />
-                  <figcaption>
-                     <h2><span>VaSto</span> \\ </br> Digital Edition</h2>
-                     <p>The critical and diplomatic edition of Storia Fiorentina by Benedetto Varchi</br>
-                        <a href="http://dharc-org.github.io/progetto-vasto" target="__blank">View Here</a>
-                     </p>
-                  </figcaption>
-               </figure>
-               <figure class="effect-duke">
-                  <img
-                     src="img/mima1.png"
-                     alt="Image"
-                     class="img-fluid"
-                     />
-                  <figcaption>
-                     <h2><span>MIMA</span> \\ Datamodel</span></h2>
-                     <p>Semantic modelling of different points of view over the same artefact. Use case on Historiae Ferrariae by Pellegrino Prisciani</br><a href="http://mima-data-model.github.io/mima-documentation" target="__blank">View Here</a></p>
-                  </figcaption>
-               </figure>
-               <figure class="effect-duke">
-                  <img
-                     src="img/vasto1.png"
-                     alt="Image"
-                     class="img-fluid"
-                     />
-                  <figcaption>
-                     <h2><span>ODI and BACODI</span> \\ Ontology and Knowledge Base</span></h2>
-                     <p>Description</a></p>
-                  </figcaption>
-               </figure>
-            </div>
-         </div>
-      </section>
+
+
+
+
 
 
 
 </div>
 
+
+</div>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9BZ4KZC18"></script>
+
       <script>
          var listDiv = document.getElementById('cv_list');
                var div=document.createElement('div');
@@ -311,23 +309,6 @@
 
       </script>
       <script>
-         /* Open when someone clicks on the span element */
-         function openNav() {
-            console.log(document.getElementById('hamburger'))
-           $("#hamburger-line").removeClass('fixed-bottom')
-           document.getElementById("myNav").style.width = "100%";
-           document.getElementById('hamburger').style.visibility = "hidden";
-
-
-         }
-
-         /* Close when someone clicks on the "x" symbol inside the overlay */
-         function closeNav() {
-            document.getElementById('hamburger').style.visibility = "visible";
-           $("#hamburger-line").addClass('fixed-bottom')
-           document.getElementById("myNav").style.width = "0%";
-
-         }
 
          // PUBLICATIONS FILTERS
 
