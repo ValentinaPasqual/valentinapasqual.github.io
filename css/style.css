@@ -160,3 +160,11 @@ a:hover {color:#FC4404 !important}
   border-top: solid #4F4F8D !important;
   background-color: #F3E9DD
 }
+
+.social i.bi, .social i.ai { font-size:50px; padding-left:0.5vw; padding-right:0.5vw}
+.bi-github {color: #2D81AF }
+.bi-twitter {color:#6A689A}
+.bi-linkedin {color:#FAAEA1}
+.ai-google-scholar {color:#FF4B00}
+.ai-figshare {color:#005E1E}
+i.bi:hover, i.ai:hover {color:#FC4404}
