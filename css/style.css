@@ -131,17 +131,17 @@ a:hover {color:#FC4404 !important}
   box-shadow: transparent !important;
 }
 
-.filterbtn:focus {
+.btn:focus  {
   box-shadow: 0 0 0 0.0rem rgb(0 0 0 / 25%) !important
 }
 
 .filterbtn:hover {
-  color: #b0aeae !important
+  color: #FC4404 !important
 }
 
 .filterbtn.active {
   background-color: #transparent !important;
-  color: white !important
+  color: #FC4404 !important
 }
 
 .filterDiv > span {
@@ -149,4 +149,14 @@ a:hover {color:#FC4404 !important}
 
 #myBtnContainer2 {
     border-bottom: solid #656565 !important;
+}
+
+.modal-header {
+  border-bottom: solid #4F4F8D !important;
+  background-color: #F3E9DD
+}
+
+.modal-footer {
+  border-top: solid #4F4F8D !important;
+  background-color: #F3E9DD
 }
