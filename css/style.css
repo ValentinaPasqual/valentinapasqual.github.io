@@ -8,9 +8,9 @@ body {background-color:white; font-family: 'Roboto Mono', monospace; color:black
 .col-md-6 {min-height:88vh; padding:0px; margin:0px}
 div.nav-container {height:88vh; margin:0px;padding:0px;display: flex; flex-direction: column;justify-content: space-around;}
 div.nav-item {text-align: left; border: 1px solid black;height:100%;}
-div.nav-item:hover button {color:white;}
+div.nav-item:hover button {color:white; text-decoration: none }
 .nav-item button {position:relative;top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 5vw}
-div.nav-item:hover {width:100%; text-align: left; background-color: #011BF4; color:white;transition: background-color 0.5s ease;}
+div.nav-item:hover {width:100%; text-align: left; background-color: #011BF4; color:white;transition: background-color 0.5s ease; text-decoration: none !important}
 div.intro-container {border: 2px solid black; min-height: 100%; background-color: white; margin:0px;padding:0px;display: flex; flex-direction: column;justify-content: space-around;}
 .row {border: 2px solid black}
 
@@ -18,15 +18,14 @@ div.intro-container {border: 2px solid black; min-height: 100%; background-color
   background: linear-gradient(45deg, #011BF480 25%, transparent 21%) , linear-gradient(315deg, #011BF480 25%, transparent 21%), linear-gradient(45deg, #011BF4 10%, transparent 11%), linear-gradient(315deg, #011BF4 10%, transparent 11%),linear-gradient(135deg, #011BF480 25%, transparent 21%), linear-gradient(225deg, #011BF480 25%, transparent 21%), linear-gradient(135deg, #011BF4 10%, transparent 11%), linear-gradient(225deg, #011BF4 10%, transparent 11%), radial-gradient(#011BF4 20%, transparent 21%);
         background-size: 4em 4em;
         background-color: #ffffff;
-        opacity: 1}
+        opacity: 1
+      }
 
-a:hover, button:hover {color:#ffe3d9 !important; transition: background-color 0.5s ease;}
-nav a, nav button {color:#fd9b78 !important}
-
+a {color:#011BF4}
 .blue-text {color:#011BF4; font-weight: bold;}
 
 .btn {color:black}
-.btn:hover {color:#FC4404}
+.btn:hover {color:#011BF4; text-decoration: underline;}
 
 
   img {background: transparent !important}
@@ -75,7 +74,7 @@ nav a, nav button {color:#fd9b78 !important}
     }
     /* When you mouse over the navigation links, change their color */
     .overlay a:hover, .overlay a:focus {
-    color: #F5DF4D;; text-decoration: underline;
+    color: #011BF4; text-decoration: underline;
     }
     /* Position the close button (top right corner) */
     .overlay .closebtn {
@@ -100,7 +99,6 @@ nav a, nav button {color:#fd9b78 !important}
     .transparent-hamburger {display: None;}
     .real-hamburger {display:inherit}
     .tm-section-4 > * {font-size:0.6rem}
-    a {color:#F5DF4D;}
     figcaption {font-size:0.8em}
 
 
@@ -115,7 +113,7 @@ nav a, nav button {color:#fd9b78 !important}
 
 #myBtnContainer {
   text-align: right !important ;
-  border-bottom: solid #656565 !important;
+  border-bottom: solid black !important;
   float:right
 }
 .filterDiv {
@@ -139,7 +137,6 @@ nav a, nav button {color:#fd9b78 !important}
   border: none;
   outline: none;
   cursor: pointer;
-  color: #656565 !important;
   font-size: 10px !important;
   padding:1vw !important;
   box-shadow: transparent !important;
@@ -150,30 +147,36 @@ nav a, nav button {color:#fd9b78 !important}
 }
 
 .filterbtn:hover {
-  color: #FC4404 !important
+  color: #011BF4 !important
 }
 
 .filterbtn.active {
   background-color: #transparent !important;
-  color: #FC4404 !important
 }
 
 .filterDiv > span {
   color:#b0aeae}
 
 #myBtnContainer2 {
-    border-bottom: solid #656565 !important;
+    background-color: #011BF4;
+    color:white !important
 }
 
+.downloadButton:hover {text-decoration: underline; color:white}
+
 .modal-header {
-  border-bottom: solid #4F4F8D !important;
-  background-color: #F3E9DD
+  border-bottom: solid black !important;
+  background-color: white
 }
 
 .modal-footer {
-  border-top: solid #4F4F8D !important;
-  background-color: #F3E9DD
+  border-top: solid black !important;
+  background-color: white
 }
+
+.badge {color:#011BF4}
+
+.card {background-color: white}
 
 .social i.bi, .social i.ai { font-size:50px; padding-left:0.5vw; padding-right:0.5vw}
 .ai-google-scholar, .bi-github, .bi-linkedin, .bi-twitter, .ai-figshare {color:black}

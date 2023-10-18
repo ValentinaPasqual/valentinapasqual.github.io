@@ -144,7 +144,7 @@
       </div>
       <div class="modal-body">
         <div id="myBtnContainer2">
-                    <button class="filterbtn btn"> Curriculum vitae
+                    <button class="filterbtn btn downloadButton"> Curriculum vitae
                      <a href="data/cv.pdf" target="__blank"><i class="fas fa-cloud-download-alt"></i></a>
                    </button></div>
         <div class="mb-4 mt-3" id="cv_list"></div>
@@ -199,6 +199,7 @@
                            var p= document.createElement('p');
                            var container = document.createElement('div');
                            var card = document.createElement('div');
+                           card.classList.add("card")
                            h5.innerHTML = data[i].Timespan;
                            h5.classList.add('badge', 'badge-dark')
                            h4.innerHTML = data[i].ActivityLabel;
