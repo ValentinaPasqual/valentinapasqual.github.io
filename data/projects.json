@@ -1,0 +1,15 @@
+[
+	"LODEdo":{
+		"description":"LODedo project investigates 'One Houndred Views of Edo' by Utagawa Hiroshige symbolic meaning through Semantic Web technologies. LODEdo data can be browsed via the Semantic interface.",
+		"year":"2023",
+		"authors":"Bruno Sartini, Valentina Pasqual",
+		"link":"https://projects.dharc.unibo.it/lodedo"
+	},
+	"ODI":{
+		"description":"ODI is a project which formally represents the narrative and structural elements of 'Il castello dei destini incrociati' by Italo Calvino. In particular, ODI is the ontology describing the work, BACODI is the Knowledge Graph (KG) storing all data regarding the work.
+		The data can be browsed via this interface which provides several paths to explore BACODI along with some specific data-visualisations.",
+		"year":"2023",
+		"authors":"Enrica Bruno, Valentina Pasqual, Francesca Tomasi",
+		"link":"https://projects.dharc.unibo.it/odi/"
+	}
+]
