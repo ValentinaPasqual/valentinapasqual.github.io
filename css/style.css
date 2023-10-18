@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
-body {background-color:#F3E9DD; font-family: 'Roboto Mono', monospace;}
-.navbar {background-color:#F3E9DD !important; text-transform:uppercase}
+body {background-color:white; font-family: 'Roboto Mono', monospace;}
+.navbar {background-color:#FC4404 !important; text-transform:uppercase}
 
-a:hover {color:#FC4404 !important}
+a:hover, button:hover {color:#ffe3d9 !important}
+nav a, nav button {color:#fd9b78 !important}
 
 #intro {font-family: 'Tilt Warp', cursive; text-transform:uppercase}
 
