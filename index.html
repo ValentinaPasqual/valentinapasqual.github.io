@@ -23,42 +23,6 @@
       -->
    <body>
 
-     <!-- NAVBAR -->
-
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <div class="container-fluid">
-     <a class="navbar-brand" href="#"></a>
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
-       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#">Intro</a>
-         </li>
-
-
-         <li class="nav-item">
-           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#curriculumModal">
-             CURRICULUM
-           </button>
-         </li>
-         <li class="nav-item">
-           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#publicationModal">
-             PUBLICATIONS
-           </button>
-         </li>
-         <li class="nav-item">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectsModal">
-            PROJECTS
-          </button>
-         </li>
-
-       </ul>
-
-     </div>
-   </div>
- </nav>
 
       <div class="columns-bg">
 
@@ -68,17 +32,19 @@
 
       <!-- Logo & Intro -->
 
-      <div class="main m-md-5 p-md-5">
+      <div class="main h-100">
 
       <section id="intro" class="tm-section-logo">
          <div class="container-fluid" id="introContainer">
-            <div class="row">
+            <div class="row m-md-5">
 
-              <div class="col-md-6">
+              <div class="col-md-6 p-md-5 hello-container">
+                <div class="intro-container p-md-5">
+                <!-- <img src="img/drawing-1.svg" style="width:10em; float:center" src="img/photo.jpeg"> -->
+
                         <p class="pt-5">
-                           Hi, my name is <span class="green-text">Valentina Pasqual</span> and I am a PhD student at Univeristy of Bologna. I'm mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
+                           Hi, my name is <span class="blue-text">Valentina Pasqual</span> and I am a PhD student at Univeristy of Bologna. I'm mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
                         </p>
-                        <hr>
                         <div class="social d-flex align-items-center justify-content-center">
                           <a href="https://github.com/ValentinaPasqual" target="_blank"><i class="bi bi-github"></i></a>
                           <a href="https://twitter.com/valepasqual" target="_blank"><i class="bi bi-twitter"></i></a>
@@ -87,15 +53,28 @@
                           <a href="https://figshare.com/authors/Valentina_Pasqual/10212998" target="_blank"><i class="ai ai-figshare"></i></a>
                         </div>
 
+                      </div>
+
                 </div>
-               <div class="col-md-6">
-                       <img src="img/drawing-1.svg" style="width:25em; float:center" src="img/photo.jpeg">
-               </div>
+                        <div class="col-md-6" id="index-nav">
 
+                          <div class="nav-container">
+                              <div class="nav-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#curriculumModal">
+                                CURRICULUM
+                              </button></div>
+                              <div class="nav-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#publicationModal">
+                                PUBLICATIONS
+                              </button></div>
+                              <div class="nav-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectsModal">
+                                PROJECTS
+                              </button></div>
+                            </div>
 
+                        </div>
                </div>
                </div>
       </section>
+
 
 
 <!-- Modal -->

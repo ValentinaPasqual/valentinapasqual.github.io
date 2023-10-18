@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
-body {background-color:white; font-family: 'Roboto Mono', monospace;}
-.navbar {background-color:#FC4404 !important; text-transform:uppercase}
+body {background-color:white; font-family: 'Roboto Mono', monospace; color:black}
 
-a:hover, button:hover {color:#ffe3d9 !important}
+/* BLUE COLOR #011BF4 */
+
+.col-md-6 {min-height:88vh; padding:0px; margin:0px}
+div.nav-container {height:88vh; margin:0px;padding:0px;display: flex; flex-direction: column;justify-content: space-around;}
+div.nav-item {text-align: left; border: 1px solid black;height:100%;}
+div.nav-item:hover button {color:white;}
+.nav-item button {position:relative;top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 5vw}
+div.nav-item:hover {width:100%; text-align: left; background-color: #011BF4; color:white;transition: background-color 0.5s ease;}
+div.intro-container {border: 2px solid black; min-height: 100%; background-color: white; margin:0px;padding:0px;display: flex; flex-direction: column;justify-content: space-around;}
+.row {border: 2px solid black}
+
+.hello-container {
+  background: linear-gradient(45deg, #011BF480 25%, transparent 21%) , linear-gradient(315deg, #011BF480 25%, transparent 21%), linear-gradient(45deg, #011BF4 10%, transparent 11%), linear-gradient(315deg, #011BF4 10%, transparent 11%),linear-gradient(135deg, #011BF480 25%, transparent 21%), linear-gradient(225deg, #011BF480 25%, transparent 21%), linear-gradient(135deg, #011BF4 10%, transparent 11%), linear-gradient(225deg, #011BF4 10%, transparent 11%), radial-gradient(#011BF4 20%, transparent 21%);
+        background-size: 4em 4em;
+        background-color: #ffffff;
+        opacity: 1}
+
+a:hover, button:hover {color:#ffe3d9 !important; transition: background-color 0.5s ease;}
 nav a, nav button {color:#fd9b78 !important}
 
-#intro {font-family: 'Tilt Warp', cursive; text-transform:uppercase}
-
-.red-text {color:#FC4404}
-.green-text {color:#065C20}
+.blue-text {color:#011BF4; font-weight: bold;}
 
 .btn {color:black}
 .btn:hover {color:#FC4404}
@@ -18,7 +31,7 @@ nav a, nav button {color:#fd9b78 !important}
 
   img {background: transparent !important}
   .tm-site-name-container {border-bottom: 0px !important}
-  .tm-section-logo {padding-top:3vw !important}
+
     /* Hide scrollbar for Chrome, Safari and Opera */
     .hide-scroll::-webkit-scrollbar {
     display: none;
@@ -163,12 +176,8 @@ nav a, nav button {color:#fd9b78 !important}
 }
 
 .social i.bi, .social i.ai { font-size:50px; padding-left:0.5vw; padding-right:0.5vw}
-.bi-github {color: #2D81AF }
-.bi-twitter {color:#6A689A}
-.bi-linkedin {color:#FAAEA1}
-.ai-google-scholar {color:#FF4B00}
-.ai-figshare {color:#005E1E}
-i.bi:hover, i.ai:hover {color:#FC4404}
+.ai-google-scholar, .bi-github, .bi-linkedin, .bi-twitter, .ai-figshare {color:black}
+i.bi:hover, i.ai:hover {color:#011BF4; transition: color 0.5s ease;}
 
 
 
