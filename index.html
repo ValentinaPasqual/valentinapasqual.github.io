@@ -13,7 +13,7 @@
       <link href="css/style.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
    </head>
    <!--
       Sided Template
@@ -99,7 +99,7 @@
 <!-- Modal -->
   <section id="publications">
 <div class="modal fade" id="publicationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
+  <div class="modal-dialog modal-fullscreen swing animated">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Publications</h5>
@@ -155,7 +155,7 @@
 </div>
 </section>
 
-<div class="modal fade" id="curriculumModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="curriculumModal" data-easein="perspectiveLeftIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
@@ -176,7 +176,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="projectsModal"  data-easein="perspectiveLeftIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
       <div class="modal-header">
@@ -296,7 +296,6 @@
                            var p= document.createElement('p');
                            var container = document.createElement('div');
                            var card = document.createElement('div');
-                           console.log(card)
                            h5.innerHTML = data[i].Timespan;
                            h5.classList.add('badge', 'badge-dark')
                            h4.innerHTML = data[i].ActivityLabel;
@@ -381,5 +380,6 @@
 
          gtag('config', 'G-G9BZ4KZC18');
        </script>
-   </body>
+
+</body>
 </html>

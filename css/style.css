@@ -168,3 +168,10 @@ a:hover {color:#FC4404 !important}
 .ai-google-scholar {color:#FF4B00}
 .ai-figshare {color:#005E1E}
 i.bi:hover, i.ai:hover {color:#FC4404}
+
+
+
+.modal.fade .modal-dialog {
+  transition: transform 0.9s ease-in;
+  transform: scale(1);
+}
