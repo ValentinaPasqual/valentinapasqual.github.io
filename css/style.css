@@ -16,9 +16,10 @@ div.intro-container {border: 2px solid black; min-height: 100%; background-color
 
 .hello-container {
   background: linear-gradient(45deg, #011BF480 25%, transparent 21%) , linear-gradient(315deg, #011BF480 25%, transparent 21%), linear-gradient(45deg, #011BF4 10%, transparent 11%), linear-gradient(315deg, #011BF4 10%, transparent 11%),linear-gradient(135deg, #011BF480 25%, transparent 21%), linear-gradient(225deg, #011BF480 25%, transparent 21%), linear-gradient(135deg, #011BF4 10%, transparent 11%), linear-gradient(225deg, #011BF4 10%, transparent 11%), radial-gradient(#011BF4 20%, transparent 21%);
-        background-size: 4em 4em;
-        background-color: #ffffff;
-        opacity: 1
+  background-size: 4em 4em;
+  background-color: #ffffff;
+  opacity: 1;
+  padding:7vw
       }
 
 a {color:#011BF4}
