@@ -1,3 +1,5 @@
+// TEMPLATE FOR PROJECTS
+
 // Function to fetch JSON data
 function fetchJSONData(callback) {
     fetch('data/projects.json')
