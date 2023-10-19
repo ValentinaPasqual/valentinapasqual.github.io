@@ -13,6 +13,7 @@ div.nav-item:hover button {color:white; text-decoration: none }
 div.nav-item:hover {width:100%; text-align: left; background-color: #011BF4; color:white;transition: background-color 0.5s ease; text-decoration: none !important}
 div.intro-container {border: 2px solid black; min-height: 100%; background-color: white; margin:0px;padding:0px;display: flex; flex-direction: column;justify-content: space-around;}
 .row {border: 2px solid black}
+.btn-check:focus+.btn-primary, .btn-primary:focus {color:#011BF4 !important}
 
 .hello-container {
   background: linear-gradient(45deg, #011BF480 25%, transparent 21%) , linear-gradient(315deg, #011BF480 25%, transparent 21%), linear-gradient(45deg, #011BF4 10%, transparent 11%), linear-gradient(315deg, #011BF4 10%, transparent 11%),linear-gradient(135deg, #011BF480 25%, transparent 21%), linear-gradient(225deg, #011BF480 25%, transparent 21%), linear-gradient(135deg, #011BF4 10%, transparent 11%), linear-gradient(225deg, #011BF4 10%, transparent 11%), radial-gradient(#011BF4 20%, transparent 21%);
