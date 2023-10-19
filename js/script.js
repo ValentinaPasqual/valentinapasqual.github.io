@@ -25,7 +25,7 @@ function renderTemplate(data) {
         const typeBadges = itemData.type.map(type => `<span class="badge bg-primary">${type}</span>`).join(' ');
 
         const cardHTML = `
-            <div class="col-md-6">
+            <div class="col-md-6 projects-cards">
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">${itemName}</h5>
