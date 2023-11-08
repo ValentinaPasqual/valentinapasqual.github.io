@@ -47,26 +47,21 @@ function renderTemplate(data) {
 fetchJSONData(renderTemplate);
 
 
-// FETCH SCHOLAR API
-const apiUrl = 'https://scholar.google.com/citations?user=EVUFJkAAAAAJ&hl';
-const outputElement = document.getElementById('output');
 
-fetch(apiUrl, {
-  mode: 'cors',
-  headers: {
-    'Access-Control-Allow-Origin':'*'
-  }
-})
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
+// FETCH SCHOLAR API - wORK IN PROGRESS
+const apiUrl = 'https://api.semanticscholar.org/graph/v1/author/1389971682?fields=papers.authors,papers.title,papers.url,papers.year,papers.venue,papers.publicationTypes';
+const pubsContainer = document.getElementById('publications');
+
+fetch(apiUrl)
+  .then(response => response.json())
   .then(data => {
     // Display data in an HTML element
-    outputElement.textContent = JSON.stringify(data, null, 2);
-    console.log(outputElement)
+
+    data.papers.forEach(paper => {
+      const newElement = document.createElement('p');
+      const paperTitle = paper.title;
+      pubsContainer.appendChild(paperTitle);
+    })
   })
   .catch(error => {
     console.error('Error:', error);
