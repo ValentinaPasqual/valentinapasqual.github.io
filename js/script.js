@@ -45,3 +45,29 @@ function renderTemplate(data) {
 
 // Fetch JSON data and render the template
 fetchJSONData(renderTemplate);
+
+
+// FETCH SCHOLAR API
+const apiUrl = 'https://scholar.google.com/citations?user=EVUFJkAAAAAJ&hl';
+const outputElement = document.getElementById('output');
+
+fetch(apiUrl, {
+  mode: 'cors',
+  headers: {
+    'Access-Control-Allow-Origin':'*'
+  }
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Display data in an HTML element
+    outputElement.textContent = JSON.stringify(data, null, 2);
+    console.log(outputElement)
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
