@@ -24,14 +24,14 @@ jobs:
       - name: Fetch Google Scholar Citations
         env:
           GOOGLE_SCHOLAR_API_URL: ${{ secrets.GOOGLE_SCHOLAR_API_URL }} # Add your API URL in repository secrets
-          API_KEY: ${{ secrets.GOOGLE_SCHOLAR_API_KEY }} # Add your API Key in repository secrets
+          GOOGLE_SCHOLAR_API_KEY: ${{ secrets.GOOGLE_SCHOLAR_API_KEY }} # Add your API Key in repository secrets
         run: |
           # Create a script to fetch data from the API
           echo "const axios = require('axios');
           const fs = require('fs');
           
           const apiUrl = process.env.GOOGLE_SCHOLAR_API_URL;
-          const apiKey = process.env.API_KEY;
+          const apiKey = process.env.GOOGLE_SCHOLAR_API_KEY;
           
           async function fetchCitations() {
             try {
