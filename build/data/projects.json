@@ -1,0 +1,58 @@
+{	"Knowledge organisation for Digital Archives":{
+		"LODEdo":{
+			"type":["Web-app", "Semantic Web", "Digital Catalogue"],
+			"description":"LODedo project investigates 'One Houndred Views of Edo' by Utagawa Hiroshige symbolic meaning through Semantic Web technologies. LODEdo data can be browsed via the Semantic interface.",
+			"year":"2023",
+			"authors":"Bruno Sartini, Valentina Pasqual",
+			"link":"https://projects.dharc.unibo.it/lodedo"
+		},
+		"WRITE":{
+			"type":["OmekaS", "Semantic Web", "Digital Archive"],
+			"description":"The WRITE archive stores artistic production belonging to Chinese Contemporary Calligraphy movement. In particular, it encompasses artistic, linguistic, and socio-political-economic aspects over four artworks collections (Contemporary Visual Art, Performance, Graffiti, and Decorative and Applied Arts). The artistic and linguistic metadata recorded over the “calli-writing units” provide insights into shared and diverging characteristics with traditional calligraphy. Traditional and contemporary calligraphy practices are compared, highlighting how contemporary calligraphy challenges traditional rules. ",
+			"year":"2021-ongoing",
+			"authors":"Valentina Pasqual, Francesca Tomasi, Adriana Iezzi",
+			"link":"https://write-dataset.github.io/documentation/"
+		},
+		"mythLOD":{
+			"type":["Website", "Semantic Web", "Digital Collection", "Storytelling"],
+			"description":"The research project aims to explore a collection of artworks (Mythologiae) by leveraging the potential of the semantic web. It primarily focuses on representing the formal association of cultural objects with literary sources, as interpreted by experts. This is achieved through the creation of mythLOD, which encompasses the dataset and detailed research documentation. The platform provides two data visualization spaces: an online catalog and a data storytelling experiment centered on the case study of the Aeneid. These visualizations enhance the project's documentation, serving as user-friendly test units for the dataset and offering further tools for exploring the collection.",
+			"year":"2021",
+			"authors":"Valentina Pasqual, Francesca Tomasi",
+			"link":"https://dharc-org.github.io/mythlod/"
+		},
+		"MIMA":{
+			"type":["Digital Hermeneutics", "Semantic Web", "Data model"],
+			"description":"??",
+			"year":"2020",
+			"authors":"Valentina Pasqual, Marilena Daquino, Francesca Tomasi",
+			"link":"https://mima-data-model.github.io/mima-documentation/"
+		}
+	},
+	"Digital Narratives and literature" : {
+		"ODI":{
+			"type":["Web app", "Semantic Web", "Narrative play"],
+			"description":"ODI is a project which formally represents the narrative and structural elements of 'Il castello dei destini incrociati' by Italo Calvino. In particular, ODI is the ontology describing the work, BACODI is the Knowledge Graph (KG) storing all data regarding the work. The data can be browsed via this interface which provides several paths to explore BACODI along with some specific data-visualisations.",
+			"year":"2023",
+			"authors":"Enrica Bruno, Valentina Pasqual, Francesca Tomasi",
+			"link":"https://projects.dharc.unibo.it/odi/"
+		}
+	},
+	"Digital Scholalry editions and Digital Philology" : {
+		"VaSto (pilot version)":{
+			"type":["XML/TEI", "Digital Edition"],
+			"description":"The critical and diplomatic edition of Storia Fiorentina by Benedetto Varchi",
+			"year":"2020",
+			"authors":"Valentina Pasqual, Roberta Priore, Francesca Tomasi, Paola Italia",
+			"link":"http://dharc-org.github.io/progetto-vasto"
+		}
+	},
+	"Knowledge production and testing tools and methods": {
+		"TESTaLOD":{
+			"type":["Web app", "Semantic Web", "Ontology testing"],
+			"description":"",
+			"year":"2019",
+			"authors":"Fabio Mariani, Valentina Pasqual, Andrea Nuzzolese, Valentina Presutti",
+			"link":"https://github.com/TESTaLOD/TESTaLOD"
+		}
+	}
+}

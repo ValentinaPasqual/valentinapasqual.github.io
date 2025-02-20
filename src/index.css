@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color:#262421;
+  background-color: #f6f4e6;
+}
+
+a {
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.book {
+  border:solid 2px black;
+  font-family: "Neuton", serif;
+  font-weight: 200;
+  font-style: normal;
+  margin:1px;
+  background-color:transparent;
+  width: 5rem;  
+}
+
+/* Book 1 - Projects - Emerald Green Theme */
+.book-1 {
+  background-color: #DA2619; /* Light emerald background */
+  border-color: black /* Emerald border */
+}
+
+.book-1 span {
+  color: black ; /* Dark emerald text */
+  font-family: "poppins", sans-serif;
+  /* font-weight: 700; */
+  font-style: normal;
+  letter-spacing: .1rem;
+  font-size: 3rem;
+}
+
+/* Book 2 - Curriculum - Amber Yellow Theme */
+.book-2 {
+  background-color: #3A439A; /* Light amber background */
+  border-color: black; /* Amber border */
+}
+
+.book-2 span {
+  color: #ECEBD3; /* Dark amber text */
+  /* font-family: "westgate", sans-serif; */
+  font-family: "poppins", sans-serif;
+  /* font-weight: 700; */
+  font-style: normal;
+  letter-spacing: .1rem;
+  font-size: 3rem;
+}
+
+/* Book 3 - Publications - Rose Red Theme */
+.book-3 {
+  background-color: #DBA0E0; /* Light rose background */
+  border-color: black; /* Rose border */
+}
+
+.book-3 span {
+  color: #3344A4; /* Dark rose text */
+  /* font-family: "shuriken-std", sans-serif; */
+  font-family: "poppins", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  letter-spacing: .1rem;
+  font-size: 3rem;
+}
+
+/* Book 4 - Contacts - Blue Theme */
+.book-4 {
+  background-color: #3FCE8A; /* Light blue background */
+  border-color: black; /* Blue border */
+}
+
+.book-4 span {
+  color: #046C7A; /* Dark blue text */
+  font-family: "poppins", sans-serif;
+  /* font-weight: 700; */
+  font-style: normal;
+  letter-spacing: .1rem;
+  font-size: 3rem;
+}
+
+.poppins {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .westgate {
+  font-family: "westgate", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.boy {
+  font-family: "shuriken-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
