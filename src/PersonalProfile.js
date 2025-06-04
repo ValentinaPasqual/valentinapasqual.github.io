@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import SimplifiedBookShelf from './SimplifiedBookShelf';
 
@@ -56,49 +56,76 @@ const PersonalProfile = () => {
     delay: 1800 // Starts after all other animations
   });
 
+  // For tag hover animations
+  const [hoveredTag, setHoveredTag] = useState(null);
+
   return (
     <div className="fixed inset-0">
       {/* Stack vertically on small screens, position absolutely on large */}
-      <div className="block lg:hidden w-full h-full">
-        {/* Mobile layout - stacked */}
-        <div className="px-8 max-w-xl mx-auto">
-          <animated.h2 style={fadeIn} className="text-base md:text-lg">
+      <div className="block lg:hidden w-full h-full flex flex-col">
+        {/* Mobile layout - presentation on top, bookshelf below */}
+        <div className="px-8 py-12 max-w-xl mx-auto mb-auto space-y-8">
+          <animated.h2 style={fadeIn} className="text-base md:text-lg mb-4">
             Hi, I am
           </animated.h2>
           
-          <animated.h1 style={nameAnimation} className="text-5xl md:text-7xl tracking-wider">
-            VALENTINA
-          </animated.h1>
-          <animated.h1 style={nameAnimation} className="text-5xl md:text-7xl tracking-wider">
-            PASQUAL
-          </animated.h1>
+          <div className="space-y-2 mb-6">
+            <animated.h1 style={nameAnimation} className="text-5xl md:text-7xl tracking-wider">
+              VALENTINA
+            </animated.h1>
+            <animated.h1 style={nameAnimation} className="text-5xl md:text-7xl tracking-wider">
+              PASQUAL
+            </animated.h1>
+          </div>
           
-          <animated.h2 style={titleAnimation} className="text-2xl md:text-4xl lg:text-5xl font-semibold tracking-wider text-end">
+          <animated.h2 style={titleAnimation} className="text-2xl md:text-4xl lg:text-5xl font-semibold tracking-wider text-end mb-8">
             DIGITAL HUMANIST
           </animated.h2>
           
-          <animated.p style={paragraphAnimation} className="text-sm text-justify leading-relaxed">
+          <animated.p style={paragraphAnimation} className="text-sm text-justify leading-relaxed mb-10">
             PhD student at University of Bologna, mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
           </animated.p>
           
-          <animated.div style={tagAnimation} className="flex flex-wrap gap-2 justify-start">
-            {tags.map((tag, index) => (
-              <animated.span 
-                key={tag}
-                style={useSpring({
-                  from: { opacity: 0, transform: 'translateY(10px)' },
-                  to: { opacity: 1, transform: 'translateY(0)' },
-                  delay: 1200 + (index * 100)
-                })}
-                className="text-lg md:text-xl font-medium px-2.5 py-0.5 rounded border border-black"
-              >
-                {tag}
-              </animated.span>
-            ))}
+          <animated.div style={tagAnimation} className="flex flex-wrap gap-2 justify-start pt-6">
+            {tags.map((tag, index) => {
+              // Animation for each tag on initial render
+              const initialAnimation = useSpring({
+                from: { opacity: 0, transform: 'translateY(10px)' },
+                to: { opacity: 1, transform: 'translateY(0)' },
+                delay: 1200 + (index * 100)
+              });
+              
+              // Enhanced hover animation 
+              const hoverAnimation = useSpring({
+                transform: hoveredTag === tag 
+                  ? 'scale(1.15) translateY(-8px) rotate(-2deg)' 
+                  : 'scale(1) translateY(0px) rotate(0deg)',
+                color: hoveredTag === tag ? 'white' : 'black',
+                backgroundColor: hoveredTag === tag ? 'black' : 'transparent',
+                boxShadow: hoveredTag === tag 
+                  ? '0 15px 25px -4px rgba(0, 0, 0, 0.2), 0 8px 12px -4px rgba(0, 0, 0, 0.15)' 
+                  : '0 0 0 rgba(0, 0, 0, 0)',
+                letterSpacing: hoveredTag === tag ? '0.05em' : 'normal',
+                fontWeight: hoveredTag === tag ? '600' : '500',
+                config: { tension: 300, friction: 15 }
+              });
+
+              return (
+                <animated.span 
+                  key={tag}
+                  style={{...initialAnimation, ...hoverAnimation}}
+                  className="text-lg md:text-xl font-medium px-3.5 py-1.5 rounded border border-black cursor-pointer transition-all duration-300"
+                  onMouseEnter={() => setHoveredTag(tag)}
+                  onMouseLeave={() => setHoveredTag(null)}
+                >
+                  {tag}
+                </animated.span>
+              );
+            })}
           </animated.div>
         </div>
         
-        <div className="fixed bottom-0 left-0 right-0">
+        <div className="mt-auto w-full">
           <SimplifiedBookShelf />
         </div>
       </div>
@@ -106,40 +133,64 @@ const PersonalProfile = () => {
       {/* Desktop layout with overlay */}
       <div className="hidden lg:block h-full w-full">
         {/* Profile info */}
-        <div className="absolute left-8 top-1/2 -translate-y-1/2 max-w-xl z-10">
-          <animated.h2 style={fadeIn} className="text-lg">
+        <div className="absolute left-8 top-1/2 -translate-y-1/2 max-w-xl z-10 p-6 space-y-3">
+          <animated.h2 style={fadeIn} className="text-lg mb-3">
             Hi, I am
           </animated.h2>
           
-          <animated.h1 style={nameAnimation} className="text-7xl tracking-wider">
-            VALENTINA
-          </animated.h1>
-          <animated.h1 style={nameAnimation} className="text-7xl tracking-wider">
-            PASQUAL
-          </animated.h1>
+          <div className="space-y-3 mb-5">
+            <animated.h1 style={nameAnimation} className="text-7xl tracking-wider">
+              VALENTINA
+            </animated.h1>
+            <animated.h1 style={nameAnimation} className="text-7xl tracking-wider">
+              PASQUAL
+            </animated.h1>
+          </div>
           
-          <animated.h2 style={titleAnimation} className="text-5xl font-semibold tracking-wider text-end">
+          <animated.h2 style={titleAnimation} className="text-5xl font-semibold tracking-wider text-end mb-6">
             DIGITAL HUMANIST
           </animated.h2>
           
-          <animated.p style={paragraphAnimation} className="text-sm text-justify leading-relaxed">
+          <animated.p style={paragraphAnimation} className="text-sm text-justify leading-relaxed mb-16">
             PhD student at University of Bologna, mainly interested in Semantic Web technologies (LOD) applied to GLAM domain.
           </animated.p>
           
-          <animated.div style={tagAnimation} className="flex flex-wrap gap-2 justify-start">
-            {tags.map((tag, index) => (
-              <animated.span 
-                key={tag}
-                style={useSpring({
-                  from: { opacity: 0, transform: 'translateY(10px)' },
-                  to: { opacity: 1, transform: 'translateY(0)' },
-                  delay: 1200 + (index * 100)
-                })}
-                className="text-xl font-medium px-2.5 py-0.5 rounded border border-black"
-              >
-                {tag}
-              </animated.span>
-            ))}
+          <animated.div style={tagAnimation} className="flex flex-wrap gap-2 justify-start pt-8">
+            {tags.map((tag, index) => {
+              // Animation for each tag on initial render
+              const initialAnimation = useSpring({
+                from: { opacity: 0, transform: 'translateY(10px)' },
+                to: { opacity: 1, transform: 'translateY(0)' },
+                delay: 1200 + (index * 100)
+              });
+              
+              // Enhanced hover animation
+              const hoverAnimation = useSpring({
+                transform: hoveredTag === tag 
+                  ? 'scale(1.15) translateY(-8px) rotate(-2deg)' 
+                  : 'scale(1) translateY(0px) rotate(0deg)',
+                color: hoveredTag === tag ? 'white' : 'black',
+                backgroundColor: hoveredTag === tag ? 'black' : 'transparent',
+                boxShadow: hoveredTag === tag 
+                  ? '0 15px 25px -4px rgba(0, 0, 0, 0.2), 0 8px 12px -4px rgba(0, 0, 0, 0.15)' 
+                  : '0 0 0 rgba(0, 0, 0, 0)',
+                letterSpacing: hoveredTag === tag ? '0.05em' : 'normal',
+                fontWeight: hoveredTag === tag ? '600' : '500',
+                config: { tension: 300, friction: 15 }
+              });
+
+              return (
+                <animated.span 
+                  key={tag}
+                  style={{...initialAnimation, ...hoverAnimation}}
+                  className="text-xl font-medium px-3.5 py-1.5 rounded border border-black cursor-pointer transition-all duration-300"
+                  onMouseEnter={() => setHoveredTag(tag)}
+                  onMouseLeave={() => setHoveredTag(null)}
+                >
+                  {tag}
+                </animated.span>
+              );
+            })}
           </animated.div>
         </div>
 

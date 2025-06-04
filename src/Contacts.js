@@ -7,7 +7,8 @@ const Contacts = () => {
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/valentina-pasqual-96791017b/', icon: 'bi bi-linkedin' },
     { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=EVUFJkAAAAAJ&hl', icon: 'ai ai-google-scholar' },
     { name: 'Figshare', url: 'https://figshare.com/authors/Valentina_Pasqual/10212998', icon: 'ai ai-figshare' },
-    { name: 'ORCID', url: 'https://orcid.org/0000-0001-5931-5187', icon: 'ai ai-orcid' }
+    { name: 'ORCID', url: 'https://orcid.org/0000-0001-5931-5187', icon: 'ai ai-orcid' },
+    { name: 'Wikidata', url: 'https://www.wikidata.org/wiki/Q104099663', icon: 'bi bi-upc' }
   ];
 
   return (
